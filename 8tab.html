@@ -1,0 +1,83 @@
+<HTML>
+  <HEAD>
+    <TITLE> Учебный файл HTML </TITLE>
+  </HEAD>
+  <meta name="Description" content=“таблица”>
+  <meta name="Keywords" content=“таблица”>
+  <BODY BGCOLOR="#FFFFCC" TEXT="#330066">
+    
+    <table
+      width="90%"
+      align="center"
+      border="3"
+      cellpadding="2"
+      bordercolor="#008080"
+      cellspacing="0"
+      BGCOLOR="#c9ecec"
+    >
+      <CAPTION ALIGN="center" >Текст заглавия таблицы</CAPTION>
+      <tr valign="center">
+        <td align="center" colspan="3">
+          <big>Заголовок</big>
+        </td>
+      </tr>
+      
+      <tr valign="top">
+        <td align="left">Данные, выровненные по<br> левому краю ячейки</td>
+        <td align="right">Данные, выровненные по<br> правому краю ячейки</td>
+        <td align="center">Данные, выровненные по<br> центру ячейки</td>
+      </tr>
+      
+      <tr>
+        <td width="30%">30% ширины таблицы</td>
+        <td width="35%">35% ширины таблицы</td>
+        <td width="35%">35% ширины таблицы</td>
+      </tr>
+      
+      <tr valign="center">
+        <td align="center" colspan="3">
+          <big>Заголовок 2</big>
+        </td>
+      </tr>
+      
+      <tr valign="top">
+        <td
+          align="center"
+          valign="middle"
+          rowspan="2"
+          background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrTWL9DA0oegHjka-FGPVqvVdBEPKhEnsBaXkS91K7DG0nFZKurOCGSkfWJ2XPOj0ei2g&usqp=CAU"
+        ></td>
+        <td align="center" background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_uOQAIUb-EusPRiyO0WqLdAg1donKOLdboQ&usqp=CAU"></td>
+        <td align="center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFNwkKkTy0jDLbNkamlCeDBNkoP_Uiu8j6Bw&usqp=CAU/200/300"></td>
+      </tr>
+      
+      <tr>
+        <td width="35%">35% ширины таблицы</td>
+        <td width="35%"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Tte0mvD9fj--zkJGrAwtpGg80FR5h46RHQ&usqp=CAU/200/300"></td>
+      </tr>
+      
+    </table>
+
+    <form method="post" action="denis_lait@mail.ru?subject=Information">
+      <pre>
+        Ваше имя: <input name="name" type="text" maxlength="40" size="40" value="">
+        Вариант доставки 
+        <input type="radio" name="delivery" value="male">Самовывоз 
+        <input type="radio" name="delivery" value="female">Доставка курьером
+        <input type="radio" name="delivery" value="female">Доставка почтой
+        Оплата
+        <select name="payment" size="1">
+          <option value="1">Наличными</option>
+          <option value="2" selected>Картой</option>
+        </select>
+
+        Комплектация
+        <input type="checkbox" name="earphones" value="yes">Наушники
+        <input type="checkbox" name="charger" value="yes">Зарядное устройство
+        <input type="checkbox" name="none" value="yes" checked>Без дополнительных позиций
+        Ваш комментарий:</pre>
+        <textarea name="about" rows="6" cols="60" wrap="off"></textarea> <p><input type="submit" value="Купить">
+        <input type="reset" value="Очистить форму">
+        </form>
+  </BODY>
+</HTML>
